@@ -214,7 +214,7 @@ option{
 .vl{
     border-right: 2px solid black;
     height: 200px;
-    width:30%;
+    width:32%;
     
     float:left;
     
@@ -223,8 +223,8 @@ option{
     border:none;
 }
 .slogo{
-    height:43px;
-    width:5%;
+    height:75px;
+    width:10%;
     /* margin-right:5%; */
     margin-top:1%;
     margin-left:22%;
