@@ -10,7 +10,7 @@
     </head>
     
     <body>
-        
+        <!-- Navigation bar -->
         <nav class="navbar navbar-light  nav1">
             
             
@@ -37,7 +37,7 @@
                 
               
             </div>
-            
+            <!-- Serach For Items -->
             <div id="search">
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Search essential grocesry and more....</option>
@@ -52,149 +52,105 @@
         
             
         </nav>
-        
+        <!-- slider for images -->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/h1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/summer.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/trend.jpg" class="d-block w-100" alt="...">
-              </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/h1.jpg" class="d-block w-100" alt="image">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/summer.jpg" class="d-block w-100" alt="summer">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/trend.jpg" class="d-block w-100" alt="trend">
+                </div>
+            </div>
+            <!-- Button for previous and next items -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
-
-        <!-- <nav class="navbar navbar-inverse ">
-            <div class="container-fluid bgcolor">
-                
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bar">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  
-                <a class="navbar-brand" href="#"><span class="tagi">JioMart</span></a>
-                
-              </div>
-              <div id="search">
-                <select>
-                    <option>Search essential grocesry and more....</option>
-                    <option>Amul Products</option>
-                    <option> PowdeDetergentr</option>
-                    <option>Clothes</option>
-                </select>
+        </div>
+        <!-- For Delivery instruction -->
+        <div class="container-fluid px-0">
+            <div class="row mx-0">
+                <div class="col-12 px-0">
+                <img src="images/deliver.jpg" class="img-fluid w-100">
+                </div>
             </div>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    s<button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              
-                <div class="navbar-collapse collapse" id="bar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-user sign1"> Sign Up</span> </a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in sign1"> Login</span> </a></li>
-                    </ul>
-                </div>    
-            </div> -->
-            
-                
-                
-              
-        <!-- </nav> -->
-        <!-- <div id="header">
-            <div id="menubar">
-                <div class="menu"></div>
-                <div class="menu"></div>
-                <div class="menu"></div>
-                
-            </div>
-            <div id="symbol">Jio Mart</div>
-            <div id="search">
-                <select>
-                    <option>Search essential grocesry and more....</option>
-                    <option>Amul Products</option>
-                    <option>Detergent Powder</option>
-                    <option>Clothes</option>
-                </select>
-            </div>
-            <div  id="logo">
-                <img src="images/sign.jpg" alt="Sign in" title="Sign in/Sign out">
-            </div>
-            <div id="sign">Sign up / Sign in</div>
-        </div> -->
-
-        
-        <div id="instruction">
-            <img src="images/deliver.jpg" alt="Free Home Delivery Every Time">
-           
         </div>
         
         
-        <div id="categories">
-            <!-- <span>Up to 60% sale </span> -->
-            
-            <span id="heading">Shop by category</span>
-            <div id="main">
-                <div class="cat1">
-                    <div class="sub1">
-                        <img src="images/Biscuits.jpg" alt="Biscuits">
-                    </div>
-                    
+        
+
+        <!-- Shop by catagory section -->
+        <br/>
+        <div class="container bg px-0">
+            <h1 style="color:blue; font-size:50px">Shop by catagory</h1>
+            <br/>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="row">
+                        
+                        <div class="col-sm-3">
+                            <img src="images/Biscuits.jpg" alt="Biscuits">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="images/Dairy.jpg" alt="Dairy" title="Dairy Items">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="images/Tea.jpg" alt="Men's Wear" title="Men's wear">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="images/Shampoo.jpg" alt="Men's Wear" title="Men's wear">
+                        </div>
+                      </div>
+                      <br/>
+                      <div class="row">
+                        
+                        <div class="col-sm-3">
+                            <img src="images/men.jpg" alt="Biscuits">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="images/women.jpg" alt="Dairy" title="Dairy Items">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="images/kids.jpg" alt="Men's Wear" title="Men's wear">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="images/Atta.jpg" alt="Men's Wear" title="Men's wear">
+                        </div>
+                      </div>
                 </div>
-                <div class="cat1">
-                    <div class="sub1">
-                        <img src="images/Dairy.jpg" alt="Dairy" title="Dairy Items">
-                    </div>
-                </div>
-                <div class="cat1">
-                    <div class="sub1">
-                        <img src="images/men.jpg" alt="Men's Wear" title="Men's wear">
-                    </div>
-                </div>
-                <div class="cat1">
-                    <div class="sub1">
-                        <img src="images/women.jpg" alt="Women" title="Women's Wear">
-                    </div>
-                </div>
-                <div class="cat1">
-                    <div class="sub1">
-                        <img src="images/kids.jpg" alt="Kids" title="Kid's Wear">
-                    </div>
-                </div>
-                <div class="cat1">
-                    <div class="sub1">
-                        <img src="images/Tea.jpg" alt="Tea" title="Tea">
-                    </div>
-                </div>
-                <div class="cat1">
-                    <div class="sub1">
-                        <img src="images/Shampoo.jpg" alt="Shampoo" title="Shampoo & Conditioner">
-                    </div>
-                </div>
-                <div class="cat1">
-                    <div class="sub1">
-                        <img src="images/Atta.jpg" alt="Atta" title="Atta">
-                    </div>
-                </div>
-                
             </div>
             
-
-
         </div>
-        <span id="top">Top search by you</span>
+        
+        
+
+        
+
+        
+            
+                
+                
+              
+      
+        
+        
+        
+        
+        
+        <!-- <span id="top">Top search by you</span>
         <div id="main1">
             
             <div class="thing">
@@ -240,15 +196,34 @@
                     <h5>You  Save: ₹25.00</h5>
                 </div>
             </div>
-        </div>
-        <div id="Payment">
-            <div id="pay1">
-                <img src="images/Paytm.jpg" alt="Paytm Offer" title="Paytem Offer">
+        </div> -->
+        <br/>
+        <div id="Controls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Paytm.jpg" class="d-block w-30 pay2" alt="image">
+                    <img src="images/Mobiwik.jpg" class="d-block w-30 pay3" alt="image">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/payapp.jpg" class="d-block w-44 pay2" alt="image">
+                    <img src="images/HDFC.jpg" class="d-block w-44 pay3" alt="image">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/simple.jpg" class="d-block w-44 pay2" alt="image">
+                    <img src="images/freecharge.jpg" class="d-block w-44 pay3" alt="image">
+                </div>
+
             </div>
-            <div id="pay1">
-                <img src="images/Mobiwik.jpg" alt="Mobiwik Offer" title="Mobiwik Offer">
-            </div> 
+            <button class="carousel-control-prev" type="button" data-bs-target="#Controls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Controls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+        
         <div id="fashion"></div>
         
         <div id="footer">
@@ -267,7 +242,7 @@
                 <p>Cancellation and Return Policy</p>
             </div>
             <div class="vl noborder">
-                <h4 class="footerlast">CONTACT US ON</h4>
+                <h4 class="footerlast">  CONTACT US ON</h4>
                 <div id="web">
                     <a href="http://instagram.com" target="__blank">
                         <img src="images/insta.png" alt="Instagram " class="slogo">
