@@ -10,12 +10,17 @@ function closeCoupon()
 function changeMode(){
     
     let mybody = document.body;
-    mybody.classList.toggle('mydark')
+    
+    mybody.classList.toggle('mydark');
+    
+    
+   
+    
    
     
 }
 function myfunction()
 {
-    let mynav = document.getElementsByClass("nav1");
-    mynav.classList.toggle("cg");
+    let cdm = document.getElementsByClassName('nav1');
+    cdm.classList.toggle('cg');
 }
