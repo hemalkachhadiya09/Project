@@ -21,6 +21,10 @@ function changeMode(){
 }
 function myfunction()
 {
-    let cdm = document.getElementsByClassName('nav1');
-    cdm.classList.toggle('cg');
+    let cdm = Array.from(document.getElementsByClassName('nav1'));
+    console.log(cdm)
+    cdm.map(element=>element.classList.toggle('cg'))
+    
 }
+
+
