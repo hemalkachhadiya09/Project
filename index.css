@@ -81,16 +81,16 @@ option{
     background-color: black;
     z-index:100;
     border: 5px dotted #0083ff99;
-    /* background-image: url('images/Coupon.jpg');
+    background-image: url('images/Coupon.jpg');
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: 100% 277px;
     /* display:none; */
     
 }
 .but
 {
     position:absolute;
-    margin-left:95%;
+    /* margin-left:94%; */
     background-color:#ccc;
 
 
@@ -298,6 +298,21 @@ a{
 
 
 
+.lg{
+    color:white !important;
+    text-decoration: none;
+    
+    
+
+}
+.text1
+{
+    margin-left:-20px;
+    font-size:35px;
+    font-weight:bold;
+    
+}
+
 
 
 
@@ -324,12 +339,6 @@ a{
 {
     margin-left:10px;
 }
-.text1
-{
-    margin-left:32px;
-    font-size:32px;
-    font-weight:bold
-}
 
 .form-select
 {
@@ -344,27 +353,33 @@ a{
     position:absolute;
     border-radius: 25px;
 }
+.add1{
+    margin-right: -30px;
+}
 
 .add1 >img {
     margin-left:1000px;
     background-color: rgb(128, 128, 128);
 }
-.add1 >span{
-    color:white;
-    font-size:17px;
-    text-decoration: none;
+.add1>img:hover{
+    transform:scale(1.1)
+
 }
+
 .add{
-    font-size:23px !important
+    /* font-size:23px !important; */
+    margin-right: 29px;
+}
+.add>img {
+    size:30px
+}
+.add>img:hover{
+    transform:scale(1.1)
+
 }
 
 
-.add > img{
-    margin-right:0px
-}
-.add >span{
-    font-size:16px
-}
+
 .pay2{
     width:49%; 
     height:200px;
@@ -388,9 +403,15 @@ a{
 #mode
 {
     position:absolute;
-    margin-left:78%;
-    margin-top:10px
+    margin-left:84%;
+    margin-top:12px
 }
+#mode:hover{
+    transform:scale(1.1)
+
+}
+
+
 .cg{
     background-color:rgba(0, 0, 0, 0.656) ;
     /* height:57px; */
