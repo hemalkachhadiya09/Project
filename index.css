@@ -355,11 +355,15 @@ a{
 }
 .add1{
     margin-right: -30px;
+    padding-bottom: 5px;
+        
+
 }
 
 .add1 >img {
     margin-left:1000px;
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(128, 128, 128);   
+
 }
 .add1>img:hover{
     transform:scale(1.1)
@@ -369,9 +373,13 @@ a{
 .add{
     /* font-size:23px !important; */
     margin-right: 29px;
+    padding-bottom: 5px;
 }
 .add>img {
-    size:30px
+    size:30px;
+    margin-top: 0%;
+
+
 }
 .add>img:hover{
     transform:scale(1.1)
@@ -404,7 +412,7 @@ a{
 {
     position:absolute;
     margin-left:84%;
-    margin-top:12px
+    margin-top:9px
 }
 #mode:hover{
     transform:scale(1.1)
