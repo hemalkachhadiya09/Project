@@ -416,6 +416,44 @@ a{
     background-color:rgba(0, 0, 0, 0.656) ;
     /* height:57px; */
     
+    
+}
+#temp
+{
+    height:45px;
+    width:100%;
+    background-color:#f3f3f3;
+    
+}
+#temp1
+{
+    float:left;
+    width:95%;
+    /* border:2px solid black; */
+    margin-top: 3px;
+}
+#on
+{
+    margin-left:93%;
+    margin-top:7px;
+    color:black;
+    font-weight:bold
+}
+#sun
+{
+    width:3%;
+    float:left;
+    /* border:2px solid black; */
+    margin-top: 4px;
+    margin-left:6px
+   
+
+}
+#sun>img
+{
+    
+    height:40px;
+    width:100%;
 }
 
 

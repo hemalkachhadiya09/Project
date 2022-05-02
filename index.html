@@ -63,6 +63,7 @@
             
             
             
+            
               
         
             
@@ -76,6 +77,15 @@
                 </div>
             </div>
         </div>
+        <div id="temp" >
+            
+            <div id="temp1">
+                <p id="on"> </p>
+            </div>
+            <div id="sun">
+                <img src='https://openweathermap.org/img/w/01d.png'/>
+            </div>
+        </div>
         <!-- slider for images -->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
            
@@ -86,10 +96,10 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/h1.jpg" class="d-block w-100" alt="image">
+                    <img src="images/summer.jpg" class="d-block w-100" alt="image">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/summer.jpg" class="d-block w-100" alt="summer">
+                    <img src="images/h1.jpg" class="d-block w-100" alt="summer">
                 </div>
                 <div class="carousel-item">
                     <img src="images/trend.jpg" class="d-block w-100" alt="trend">
@@ -105,6 +115,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        
         <!-- For Delivery instruction -->
         <div class="container-fluid px-0">
             <div class="row mx-0">
@@ -283,7 +294,34 @@
             </div>
             <script>
                 window.onload=loadCoupon();
-                
+                let x = document.getElementById('on');
+
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition)
+                }
+                else{
+                    x.innerText="Geo Not Supported"
+                }
+                function showPosition(data){
+                    console.log(data)
+                    
+                    let latitude = data.coords.latitude;
+                    let longitude = data.coords.longitude
+                    const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=json&units=metric&cnt=1&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`;
+
+                     
+                    fetch(url,{method:'GET'})
+                    
+                    .then((res) => res.json())
+                    
+                    .then((data) => {
+                    
+                        let weather = data.list[0].temp.day
+                        x.innerText = ` ${weather} °C`
+                        
+                    })
+                }
+                                
             </script>
 
     </body>
