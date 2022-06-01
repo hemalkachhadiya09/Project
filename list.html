@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buy Grocerry Online</title>
+        <link rel="stylesheet" href="list.css"/>
+        <link href="images/JioMart.jpg" rel="icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="list.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <nav class=" navbar navbar-light nav1 " >
+            
+            <div id="mode">
+                <a onClick="changeMode(); myfunction();">
+                    <i class="material-icons" style="font-size:33px;color:white;">brightness_medium</i>
+                </a>
+            </div>
+            
+            <div class="container-fluid nav2">
+                <div id="menubar">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                </div>
+                <a class="navbar-brand">
+                    <span class="text1">JioMart</span>
+                </a>
+                <a class=" add1" href="#">
+                    <img src="images/cart.jpg" alt="cart" style="width:36px; height:29px;" class="rounded-pill">
+                    <!-- <span>Cart</span> -->
+                </a>
+                <a class=" add" href="#" >
+                    
+                    <img src="images/logo.jpg" alt="Avatar Logo" style="width:33px;" class="rounded-pill">
+                    <!-- <span>Sign in / Sign up</span>  -->
+                </a>
+            </div>   
+            <!-- Serach For Items -->
+            <div id="search">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Search essential grocesry and more....</option>
+                    <option value="1">Amul Products</option>
+                    <option value="2">PowdeDetergentr</option>
+                    <option value="3">Clothes</option>
+                </select> 
+            </div>    
+        </nav>
+        <div id="content">
+            <div id="filterDiv">
+                <h1 id="fil">Filter</h1>
+                <hr/>
+                <span id="sort">Please select Brand </span></br>
+                <input type="checkbox"><span class="inpur">H&M</span><br/>
+                <input type="checkbox"/><span class="inpur">Nike</span><br/>
+                <input type="checkbox"/><span class="inpur">LP</span><br/>
+                <input type="checkbox"/><span class="inpur">Highlander</span><br/>
+                <input type="checkbox"/><span class="inpur">Raymond</span><br/>
+                <input type="checkbox"/><span class="inpur">Puma</span><br/>
+                <input type="checkbox"/><span class="inpur">Adidas</span>
+                <hr/>
+                <span id="sort">Select your size: </span>
+                <div>
+                    <input type="radio" name="size" value="XS" id="xs">
+                    <label for="xs">XS</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" value="S" id="s">
+                    <label for="s">S</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" value="M" id="m">
+                    <label for="m">M</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" value="L" id="l">
+                    <label for="l">L</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" value="XL" id="xl">
+                    <label for="xl">XL</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" value="XXL" id="xxl">
+                    <label for="xxl">XXL</label>
+                </div>
+                <hr/>
+                <span id="sort">Sort by </span>
+                <div>
+                    <input type="radio" name="Price" value="Popularity" id="Popularity">
+                    <label for="Popularity">Popularity</label>
+                </div>
+                <div>
+                    <input type="radio" name="Price" value="Rating:High to Low" id="Rating:High to Low">
+                    <label for="Rating:High to Low">Rating:High to Low</label>
+                </div>
+                <div>
+                    <input type="radio" name="Price" value="Delivery Time" id="Delivery Time">
+                    <label for="Delivery Time">Delivery Time</label>
+                </div>
+                <div>
+                    <input type="radio" name="Price" value="Cost:Low to High" id="Cost:Low to High">
+                    <label for="Cost:Low to High">Cost:Low to High</label>
+                </div>
+                <div>
+                    <input type="radio" name="Price" value="Cost:High to Low" id="Cost:High to Low">
+                    <label for="Cost:High to Low">Cost:High to Low</label>
+                </div>
+                
+                
+                
+            </div>
+            <div id="contentDiv">
+                <div class="content1">
+                    <a href="detail.html">
+                        <div class="subcontent1">
+                            <img src="images/Nike-TShirt.jpg" alt="Nike-TShirt">
+                        </div>
+                        <div class="subcontent2">
+                            <span class="head"> Nike</span>
+                            <p class="pin"> Men Red & White AS M NSW SO 3 HBR TEE Printed Pure Cotton T-shirt</hp>
+                            <p class="pin">4123 Ratings</p>
+                            
+                            
+    
+                        </div>
+                    </a>
+                    
+
+                </div>
+                <div class="content1">
+                    
+                        <a href="detail.html">
+                            <div class="subcontent1">
+                                <img src="images/Adidas-Tshirts.jpg" alt="Adidas-Tshirts">
+                            </div>
+                            <div class="subcontent2">
+                                <span class="head"> Adidas</span>
+                                <p class="pin"> Men Navy Blue Polo Collar SMU Training T-shirt</p>
+                                <p class="pin">897 Ratings</p>
+                            </div>
+                        </a>
+                    
+                    
+
+
+                </div>
+                <div class="content1">
+                    <div class="subcontent1">
+                        <img src="images/LP-Shirt.jpg" alt="LP-Shirt">
+                    </div>
+                    <div class="subcontent2">
+                        <span class="head"> Louis Philippe</span>
+                        <p class="pin"> Men White Solid Slim Fit Formal Pure Cotton Shirt</p>
+                        <p class="pin">456 Ratings</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        
+
+                        
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+            
+            
+            
+            
+            
+            
+            
+        
+            
+        
+        <!-- Footer -->
+        <div id="footer">
+            <div class="vl">
+                <h4 class="footerlast">MOST POPULAR CATEGORIES</h4>
+                <p >Staple</p>
+                <p>Dinner</p>
+                <p>lunch</p>
+                <p>Snacks</p>
+            </div>
+            <div class="vl">
+                <h4 class="footerlast">CUSTOMER SERVICES</h4>
+                <p>About Us</p>
+                <p>FAQ</p>
+                <p>Term and Conditions</p>
+                <p>Cancellation and Return Policy</p>
+            </div>
+            <div class="vl noborder">
+                <h4 class="footerlast">  CONTACT US ON</h4>
+                <div id="web">
+                    <a href="http://instagram.com" target="__blank" class="cu">
+                        <img src="images/insta.png" alt="Instagram " class="slogo" title="Instagram">
+                    </a>
+                    <a href="http://youtube.com" target="__blank" class="cu">
+                        <img src="images/youtube1.png" alt="Youtube" class="slogo" title="Youtube">
+                    </a>
+                    <a href="http://facebook.com" target="__blank" class="cu">
+                        <img src="images/facebook.png" alt="Facebook" class="slogo" title="Facebook">  
+                    </a>
+                </div> 
+
+            </div>
+    </body>
+</html>

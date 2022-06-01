@@ -1,11 +1,4 @@
-function loadCoupon()
-{
-    document.getElementById("Coupon").style.display="block"
-}
-function closeCoupon()
-{
-    document.getElementById("Coupon").style.display="none"
-}
+
 
 function changeMode(){
     
@@ -26,7 +19,3 @@ function myfunction()
     cdm.map(element=>element.classList.toggle('cg'))
     
 }
-
-
-
-
