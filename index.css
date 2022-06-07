@@ -465,9 +465,10 @@ a{
 }
 .data{
     
-    height:660px;
+    height:880;
     width:90%;
     margin-left:5%;
+    
 }
 .data1
 {
@@ -484,6 +485,10 @@ a{
     width:100%;
     
     
+
+}
+.data1:hover{
+    transform:scale(1.1)
 
 }
 
